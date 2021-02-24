@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- stylesheets -->
+    <link rel="stylesheet" href="css/styles.css">
+
+<!-- Title -->
+    <title>Library Management System</title>
+</head>
+<body onload="init()">
+  <!-- Title -->
+    <div id="title">
+        <marquee direction="up" behavior="alternate" style="height:100px">
+            Library Management System
+        </marquee>
+    </div>
+<hr>
+   <!-- Sections  -->
+    <div id="sections">
+        <a class="button" href="authors.html">Authors</a>
+        <a class="button" href="publishers.html">Publishers</a>
+    </div>
+<hr>
+
+    <!-- Books -->
+    <div id="books">
+        
+        <table class="customers" id="addedBooksList">
+            <thead>
+                <tr>
+                    <th >Number</th>
+                    <th>Book Name</th>
+                    <th>Author</th>
+                    <th>Publisher</th>
+                    <th>Date</th>
+                    <th>Actions</th>
+                  </tr>
+            </thead>
+            <tbody id="bookRows" class="editableContent">
+                <tr>
+                    
+                </tr>
+            </tbody>
+
+          </table>
+
+          <a class="button button5" href="addBook.html"> ⚘ Add New Book !!</a>
+    </div>
+    <div id="updatebooks">
+        <form id="form">
+                <input type="text" id="bookname" name="b_name" placeholder="Book Name">
+                <input type="text" id="authorname" name="a_name" placeholder="Author Name">
+                <input type="text" id="publishername" name="p_name" placeholder="Publisher Name">
+                <input type="date" id="publishdate" name="date">
+                <button type="button" id="submit" class="button" onclick="onUpdate()">Nothing To Update</button>
+                <button type="button" id="clear" class="button" onclick="onClearPressed()">Clear</button>
+        </form>
+    </div> 
+
+
+
+
+</body>
+
+<!-- scripts -->
+<script src="js/main.js"></script>
+
+
+</html>
+
